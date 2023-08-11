@@ -415,7 +415,7 @@
     document.head.appendChild(t);
   });
 </script>
-<script>
+<!-- <script>
   document.addEventListener("DOMContentLoaded", function() {
     const askBotButton = document.getElementById("askBotButton");
     if (askBotButton) {
@@ -428,7 +428,23 @@
       });
     }
   });
-</script>	
+</script> -->
+<script src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/current/WatsonAssistantChatEntry.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const askBotButton = document.getElementById("askBotButton");
+    if (askBotButton) {
+      askBotButton.addEventListener("click", function() {
+        if (window.WatsonAssistantChat) {
+          const chatInstance = new WatsonAssistantChat.default(window.watsonAssistantChatOptions);
+          chatInstance.openWindow();
+        }
+      });
+    }
+  });
+</script>
+	
 
   </body>
   </html>
