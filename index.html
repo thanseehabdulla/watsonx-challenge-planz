@@ -717,19 +717,19 @@
     
     <script src="js/script.js"></script>
 
-	<script>
-		window.watsonAssistantChatOptions = {
-		  integrationID: "d4e07d3c-0299-4e86-9749-16753ca010b8", // The ID of this integration.
-		  region: "eu-gb", // The region your integration is hosted in.
-		  serviceInstanceID: "a0e6ada0-4704-4cb9-9061-d7b9a09855bf", // The ID of your service instance.
-		  onLoad: function(instance) { instance.render(); }
-		};
-		setTimeout(function(){
-		  const t=document.createElement('script');
-		  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-		  document.head.appendChild(t);
-		});
-	  </script>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "a53a3234-5aad-4993-8adf-501a77013477", // The ID of this integration.
+    region: "eu-gb", // The region your integration is hosted in.
+    serviceInstanceID: "a0e6ada0-4704-4cb9-9061-d7b9a09855bf", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 
   </body>
   </html>
